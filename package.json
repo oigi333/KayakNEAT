@@ -2,14 +2,15 @@
   "name": "kayak-neat",
   "version": "0.0.1",
   "description": "NeuroEvolution of Augmenting Topologies for typescript or javascript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "start": "node dist/index.js",
     "test": "mocha --require tests/helper --ignore tests/helper --recursive ./tests",
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oigi333/KayakNEAT.git"
+    "url": "git+https://github.com/oigi333/kayak-neat.git"
   },
   "keywords": [
     "NEAT",
@@ -18,9 +19,9 @@
   "author": "Kayak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oigi333/KayakNEAT/issues"
+    "url": "https://github.com/oigi333/kayak-neat/issues"
   },
-  "homepage": "https://github.com/oigi333/KayakNEAT#readme",
+  "homepage": "https://github.com/oigi333/kayak-neat#readme",
   "devDependencies": {
     "callsite": "^1.0.0",
     "chai": "^4.2.0",

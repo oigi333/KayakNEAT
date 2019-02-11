@@ -5,6 +5,7 @@ export declare enum NodeType {
 }
 export default class Node {
     id: number;
+    bias: number;
     nodeType: NodeType;
-    constructor(id: number, nodeType: NodeType);
+    constructor(id: number, nodeType: NodeType, bias?: number);
 }

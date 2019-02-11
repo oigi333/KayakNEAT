@@ -19,7 +19,7 @@ export default class NeuralNetwork
             throw new Error("Inputs should be in graph");
     }
     
-    public predict(input: Array<number>): Array<number>
+    public predict(...input: Array<number>): Array<number>
     {
         const output: {[key: number]: number} = this.outputs.reduce((object: {[key: number]: number}, out: number) => {
             object[out] = 0;

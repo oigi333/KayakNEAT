@@ -9,7 +9,7 @@ class NeuralNetwork {
         if (this.inputs.reduce((b, i) => b || (this.graph.findIndex(graph => graph.from == i) == -1), false))
             throw new Error("Inputs should be in graph");
     }
-    predict(input) {
+    predict(...input) {
         const output = this.outputs.reduce((object, out) => {
             object[out] = 0;
             return object;
